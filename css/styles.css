@@ -406,6 +406,16 @@ body {
   fill: var(--accent-color);
 }
 
+.team-social-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-social-icon-link .team-social-icon:hover,
 .team-social-icon-link .team-social-icon:focus {
   fill: var(--portfolio-menu-button-active-color);
