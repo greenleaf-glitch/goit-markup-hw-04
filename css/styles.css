@@ -417,7 +417,10 @@ body {
 }
 
 .team-social-icon-link .team-social-icon:hover,
-.team-social-icon-link .team-social-icon:focus {
+.team-social-icon-link
+  .team-social-icon:focus
+  .team-social-icon-link
+  .team-social-icon:active {
   fill: var(--portfolio-menu-button-active-color);
 }
 
@@ -458,12 +461,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  color: var(--bg-customer-box);
   border: 1px solid var(--bg-customer-box);
   border-radius: 4px;
 }
 
 .customer-logo-icon {
-  fill: var(--bg-customer-box);
+  fill: currentColor;
 }
 
 .customer-logo-link:hover,
@@ -657,8 +661,8 @@ body {
   background: var(--white, #fff);
 }
 
-.portfolio-card-style:hover,
-.portfolio-card-style:focus {
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
