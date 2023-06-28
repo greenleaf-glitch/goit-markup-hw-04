@@ -422,6 +422,8 @@ body {
   .team-social-icon-link
   .team-social-icon:active {
   fill: var(--portfolio-menu-button-active-color);
+  background-color: #404bbf;
+  border-radius: 50%;
 }
 
 /* Customers */
@@ -439,15 +441,6 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
 }
-
-/* .customers-logo-box {
-  display: block;
-
-  /* padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-top: 16px; 
-  border-radius: 4px;} */
 
 .customer-items-list {
   height: 88px;
@@ -475,8 +468,8 @@ body {
   border-color: var(--portfolio-menu-button-active-color);
 }
 
-.customer-logo-link:hover .customer-logo-icon,
-.customer-logo-link:focus .customer-logo-icon {
+.customer-logo-link .customer-logo-icon:hover,
+.customer-logo-link .customer-logo-icon:active {
   fill: var(--portfolio-menu-button-active-color);
 }
 
@@ -553,10 +546,10 @@ body {
 
 .footer-content-placer {
   display: flex;
-  max-width: 1440px;
   gap: 120px;
   justify-content: flex-start;
   align-items: baseline;
+  margin-right: 120px;
 }
 
 .footer-logo-slogan-box {
@@ -582,6 +575,8 @@ body {
 .footer-social-link .footer-social-icon:hover,
 .footer-social-link .footer-social-icon:focus {
   fill: #31d0aa;
+  background-color: #31d0aa;
+  border-radius: 50%;
 }
 
 /* Portfolio Styles */
