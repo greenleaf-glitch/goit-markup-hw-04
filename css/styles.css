@@ -136,6 +136,9 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -210,18 +213,19 @@ body {
 /* Section  Hero */
 
 .hero-section {
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
   height: 600px;
   background-image: linear-gradient(
-      rgba(66, 46, 46, 0.7),
+      rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/hero/people-office.jpg");
   background-color: var(--secondary-color);
-  background-size: 1440px;
   background-size: cover;
-  /* background: var(rgba(46, 47, 66, 0.7)); */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-wrapper {
@@ -319,6 +323,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 /* Section 2 PRODUCTS*/
@@ -394,8 +399,8 @@ body {
   align-items: center;
 }
 
-.team-social-icon-link {
-}
+/* .team-social-icon-link {
+} */
 
 .team-social-icon {
   fill: var(--accent-color);
@@ -494,15 +499,16 @@ body {
   font-size: 16px;
   font-family: var(--primary-font);
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 1.5;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-socials-container {
   display: inline-block;
 }
 
-.footer-socials-icons-box {
+.footer-socials-icons-list {
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -515,7 +521,7 @@ body {
   display: flex;
   gap: 120px;
   justify-content: flex-start;
-  align-items: top;
+  align-items: baseline;
 }
 
 .footer-logo-slogan-box {
@@ -586,6 +592,10 @@ body {
   padding-bottom: 120px;
 }
 
+.portfolio-card-link {
+  display: block;
+}
+
 .portfolio-cards-list {
   display: flex;
   flex-wrap: wrap;
@@ -606,9 +616,9 @@ body {
 
 .portfolio-card-style:hover,
 .portfolio-card-style:focus {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-sign-style {
