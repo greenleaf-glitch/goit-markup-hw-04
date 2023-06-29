@@ -474,12 +474,14 @@ body {
 .customer-logo-link:focus,
 .customer-logo-link:active {
   border-color: var(--portfolio-menu-button-active-color);
+  color: var(--portfolio-menu-button-active-color);
 }
 
 .customer-logo-link .customer-logo-icon:hover,
 .customer-logo-link .customer-logo-icon:active,
 .customer-logo-link .customer-logo-icon:focus {
   fill: var(--portfolio-menu-button-active-color);
+  color: var(--portfolio-menu-button-active-color);
 }
 
 /* Footer */
