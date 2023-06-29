@@ -46,6 +46,7 @@ button {
 
 /* Variables */
 :root {
+  /* COLORS */
   --accent-color: #4d5ae5;
   --primary-color: #434455;
   --secondary-color: #2e2f42;
@@ -54,6 +55,9 @@ button {
   --portfolio-menu-button-border-color: #e7e9fc;
   --highlight-color: #ffffff;
   --bg-customer-box: #8e8f99;
+  --bg-footer-socials-active: #31d0aa;
+  height: 40px;
+  /* FONTS */
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
@@ -399,30 +403,31 @@ body {
   align-items: center;
 }
 
-/* .team-social-icon-link {
-} */
-
 .team-social-icon {
-  fill: var(--accent-color);
+  fill: var(--portfolio-menu-button-passive-color);
+}
+
+.team-social-icon-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 .team-social-icon-link {
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.team-social-icon-link .team-social-icon:hover,
-.team-social-icon-link
-  .team-social-icon:focus
-  .team-social-icon-link
-  .team-social-icon:active {
-  fill: var(--portfolio-menu-button-active-color);
-  background-color: #404bbf;
+.team-social-icon-link:hover,
+.team-social-icon-link:focus,
+.team-social-icon-link:active {
+  background-color: var(
+    --portfolio-menu-button-active-color
+  );
   border-radius: 50%;
 }
 
@@ -438,8 +443,6 @@ body {
   gap: 24px;
   justify-content: center;
   align-items: center;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .customer-items-list {
@@ -449,11 +452,11 @@ body {
 
 .customer-logo-link {
   display: flex;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  width: 100%;
+  height: 100%;
   color: var(--bg-customer-box);
   border: 1px solid var(--bg-customer-box);
   border-radius: 4px;
@@ -478,16 +481,22 @@ body {
 .footer {
   background: var(--secondary-color);
   width: 1440px;
-  height: 312px;
+  /* height: 312px; */
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.footer-container {
+.footer-content-placer {
   display: flex;
-  width: 264px;
-  height: fit-content;
+  gap: 120px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer-logo-slogan-box {
+  display: flex;
   flex-direction: column;
+  gap: 17px;
 }
 
 .logo-color-studio-footer {
@@ -503,15 +512,22 @@ body {
 
 .footer-logo {
   display: inline-block;
-  /* margin-bottom: 16px; */
 }
 
 .footer-logo-text {
+  display: flex;
   width: 264px;
   height: fit-content;
-  display: flex;
   flex-direction: column;
   margin-left: 156px;
+}
+
+.footer-socials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .footer-header-socials {
@@ -521,62 +537,43 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
-.footer-socials-container {
-  display: inline-block;
-}
-
-.footer-social-icons-holder {
+.footer-social-icons-list {
   display: flex;
-  /* width: 100%;
-  height: 100%; */
   flex-direction: row;
-  gap: 16px;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  gap: 16px;
+  margin: 0;
 }
 
-.footer-socials-icons-list {
-  width: 40px;
-  height: 40px;
-}
-
-.footer-content-placer {
-  display: flex;
-  gap: 120px;
-  justify-content: flex-start;
-  align-items: baseline;
-  margin-right: 120px;
-}
-
-.footer-logo-slogan-box {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-}
-
-.footer-social-icon {
-  fill: var(--accent-color);
+.footer-socials-icons-item {
+  /* width: 40px;
+  height: 40px; */
+  width: 100%;
+  height: 100%;
 }
 
 .footer-social-link {
   display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 50%;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
 }
 
-.footer-social-link .footer-social-icon:hover,
-.footer-social-link .footer-social-icon:focus {
-  fill: #31d0aa;
-  background-color: #31d0aa;
-  border-radius: 50%;
+.footer-social-icon {
+  fill: var(--portfolio-menu-button-passive-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link :focus,
+.footer-social-link:active {
+  background-color: var(--bg-footer-socials-active);
 }
 
 /* Portfolio Styles */
